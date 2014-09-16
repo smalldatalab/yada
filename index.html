@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Food Game">
+    <meta name="author" content="Small Data Lab">
+	<link rel="icon" href="logo/Yada_icon.ico">
+
+    <title>Yada</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="customCSS/signin.css" rel="stylesheet">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
+	<script src="customJS/index.js"></script>
+
+  </head>
+
+  <body>
+	  <div class="container logo">
+	  		<img src="webImage/logo/Yada_logo.png" alt="Yada">
+	  </div>
+
+      <div class="container">
+
+        <div class="form-signin register" id="registerform">
+				<div class="form-group">
+        		<input type="email" id="email" class="form-control" placeholder="Email Address" required="" autofocus="">
+        		<input type="password" id="pwd" class="form-control" placeholder="Password" required="">
+        		<input type="password" id="pwdconfirm" class="form-control" placeholder="Confirm" required="">
+				</div>
+				
+        		<button class="btn btn-lg btn-primary btn-block" id="registerbtn">Register</button>
+      	</div>
+	</div>
+	
+	<div class="container">
+        <div class="form-signin signin" id="loginform">
+				
+				<div class="form-group">
+        		<input type="email" id="email" class="form-control" placeholder="Email Address" required="" autofocus="">
+        		<input type="password" id="pwd" class="form-control" placeholder="Password" required="">
+				</div>
+				
+        		<button class="btn btn-lg btn-primary btn-block" id="signinbtn">Sign in</button>
+      	</div>
+
+      </div> <!-- /container -->
+	  
+	  <div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="#"><p class="text-center" id="controlText">Sign in Here</p></a>
+					<img src="webImage/loading.gif" alt="loading..." id="loading">
+				</div>
+		    </div>
+	  </div>
+
+	  <div class="container food-sample">
+	  			<div class="row">
+					<div class="col-md-2"><img src="webImage/SampleFood/burger.jpg" class="img-circle img-thumbnail"></div>
+					<div class="col-md-2"><img src="webImage/SampleFood/chips.jpg" class="img-circle img-thumbnail"></div>
+					<div class="col-md-2"><img src="webImage/SampleFood/fruit.jpg" class="img-circle img-thumbnail"></div>
+					<div class="col-md-2"><img src="webImage/SampleFood/carrot.jpg" class="img-circle img-thumbnail"></div>
+					<div class="col-md-2"><img src="webImage/SampleFood/green.jpg" class="img-circle img-thumbnail"></div>
+					<div class="col-md-2"><img src="webImage/SampleFood/coffee.jpg" class="img-circle img-thumbnail"></div>
+				</div>
+	  </div>
+	  
+	  <div class="container">
+		  <div class="row">
+		  	<div class="col-md-12"><p class="text-center">Powered by <a href="http://getbootstrap.com/">Bootstrap</a> and <a href="https://sites.google.com/site/eatingandanxietylab/resources/food-pics">food-pics</a>
+		  </div>
+	  	  
+		  <div class="row">
+		    <div class="col-md-12"><p class="text-center">&copy;<a href="https://smalldata.io/">Small Data Lab@CornellTech</a></p></div>
+		  </div>
+	  </div>
+	  
+</body></html>

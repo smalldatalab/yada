@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Food Game">
+    <meta name="author" content="Small Data Lab">
+    <link rel="icon" href="webImage/logo/Yada_icon.ico">
+
+    <title>Yada</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="customCSS/game.css" rel="stylesheet">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
+	<script src="customJS/game.js"></script>
+	
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li id="breakfast" class="active"><a href="#">Breakfast</a></li>
+          <li id="lunch"><a href="#">Lunch/Dinner</a></li>
+          <li id="snack"><a href="#">Snack</a></li>
+        </ul>
+        <img src="webImage/logo/Yada_logo.png" class="text-muted" id="logo">
+      </div>
+
+      <div class="contain">
+	  		<div class="row">
+				<div class="col-md-6"><img src="" class="img-thumbnail choice" id="picture_1"></div>
+				<div class="col-md-6"><img src="" class="img-thumbnail choice" id="picture_2"></div>
+			</div>
+			<div class="row description">
+				<div class="col-md-6"><p class="text-center lead text-capitalize" id="name_1"></p></div>
+				<div class="col-md-6"><p class="text-center lead text-capitalize" id="name_2"></p></div>
+			</div>
+			<div class="row">
+				<div class="col-md-12"><button class="btn btn-lg btn-danger btn-block yuck">Yuck</button></div>
+			</div>
+	  </div>
+
+      <div class="footer">
+	  <div class="row">
+	  	<div class="col-md-12"><p class="text-center">Powered by <a href="http://getbootstrap.com/">Bootstrap</a> and <a href="https://sites.google.com/site/eatingandanxietylab/resources/food-pics">food-pics</a>
+	  </div>
+  	  
+	  <div class="row">
+	    <div class="col-md-12"><p class="text-center">&copy;<a href="https://smalldata.io/">Small Data Lab@CornellTech</a></p></div>
+	  </div>
+      </div>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>

@@ -1,0 +1,89 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#logo{
+	display:block;
+	width:150px;
+	margin-bottom:10px;
+}
+
+.nav{
+	padding-top:10px;
+}
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+}
+
+.choice{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+}
+
+.choice:hover{
+	opacity:0.6;
+}
+
+.choice:active{
+	opacity:1;
+	border-color:#F7B543;
+	border-width:8px;
+}
+
+.description{
+	margin-top: 20px;
+	margin-bottom:10px;
+}
+
+.yuck{
+	width:150px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+	margin-top:0px;
+}
