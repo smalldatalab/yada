@@ -17,7 +17,10 @@
     <link href="customCSS/game.css" rel="stylesheet">
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="http://code.highcharts.com/highcharts.js"></script>
 	
+	<script src="customJS/plot.js"></script>
 	<script src="customJS/game.js"></script>
 	
   </head>
@@ -34,7 +37,18 @@
         <img src="webImage/logo/Yada_logo.png" class="text-muted" id="logo">
       </div>
 
-      <div class="contain">
+      <div class="container">
+		  
+		  		<div class="dropdown">
+		          <button class="btn btn-default dropdown-toggle" type="button" id="menu" data-toggle="dropdown"><span id="userid"></span>
+		          <span class="caret"></span></button>
+		          <ul class="dropdown-menu" role="menu" aria-labelledby="menu">
+		            <li role="presentation" ><a role="menuitem" href="#" class="text-center" id="logout">Log out</a></li>
+		          </ul>
+		        </div>
+				
+				<a href="index.html" class="btn btn-lg btn-primary btn-block" id="registerbtn" >Register</a>
+				
 	  		<div class="row">
 				<div class="col-md-6"><img src="" class="img-thumbnail choice" id="picture_1"></div>
 				<div class="col-md-6"><img src="" class="img-thumbnail choice" id="picture_2"></div>
@@ -44,7 +58,22 @@
 				<div class="col-md-6"><p class="text-center lead text-capitalize" id="name_2"></p></div>
 			</div>
 			<div class="row">
-				<div class="col-md-12"><button class="btn btn-lg btn-danger btn-block yuck">Yuck</button></div>
+				<a href="#"><div class="col-md-2 yuck"><span class="glyphicon glyphicon-remove-sign"></span> <i>Yuck</i></div></a>
+				<div class="col-md-8 yuckInstruction lead"><i>Don't like either option? We won't show them to you again!</i></div>
+			</div></a>
+			<div class="row">
+				<div class="col-md-12">
+					<img src="webImage/empty.jpg" class="img-circle img-thumbnail progressbar" id="progress1">
+					<img src="webImage/empty.jpg" class="img-circle img-thumbnail progressbar" id="progress2">
+					<img src="webImage/empty.jpg" class="img-circle img-thumbnail progressbar" id="progress3">
+					<img src="webImage/empty.jpg" class="img-circle img-thumbnail progressbar" id="progress4">
+					<img src="webImage/empty.jpg" class="img-circle img-thumbnail progressbar" id="progress5">
+					<img src="webImage/empty.jpg" class="img-circle img-thumbnail progressbar" id="progress6">
+					<img src="webImage/empty.jpg" class="img-circle img-thumbnail progressbar" id="progress7">
+					<img src="webImage/empty.jpg" class="img-circle img-thumbnail progressbar" id="progress8">
+					<img src="webImage/empty.jpg" class="img-circle img-thumbnail progressbar" id="progress9">
+					<img src="webImage/empty.jpg" class="img-circle img-thumbnail progressbar" id="progress10">
+				</div>
 			</div>
 	  </div>
 
@@ -54,11 +83,57 @@
 	  </div>
   	  
 	  <div class="row">
-	    <div class="col-md-12"><p class="text-center">&copy;<a href="https://smalldata.io/">Small Data Lab@CornellTech</a></p></div>
+	    <div class="col-md-12"><p class="text-center">&copy; <a href="https://smalldata.io/">Small Data Lab@CornellTech</a></p></div>
 	  </div>
       </div>
 
     </div> <!-- /container -->
 
+	<div class="overlay overlay-scale">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		    <li data-target="#myCarousel" data-slide-to="1"></li>
+		    <li data-target="#myCarousel" data-slide-to="2"></li>
+		  </ol>
+		  
+		  <div class="carousel-inner">
+		    <div class="item active">
+		      <div class="container">
+					<div class="col-md-3">
+						<p class="lead text-capitalize" id="totalCalories"><strong>CALORIES:</strong></p>
+						<p class="lead text-capitalize" id="totalCaloriesValue"></p>
+					</div>
+					<div class="col-md-9" id="calories">
+					</div>
+					
+		      </div>
+		    </div>
+		    <div class="item">
+		      <div class="container">
+		        <div class="col-md-12" id="calories_d">
+				</div>
+		      </div>
+		    </div>
+		    
+			<div class="item">
+		      <div class="container">
+		        <div class="col-md-12" id="calories_e">
+				</div>
+		      </div>
+		    </div>
+		  </div>
+		  <!-- Controls -->
+		  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left"></span>
+		  </a>
+		  
+		  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>  
+		</div>
+		<p class="text-center"><a class="btn btn-lg btn-primary" href="game.html" role="button" id="tryagainbtn">Try Again</a></p>
+		<p class="text-center"><a class="btn btn-lg btn-primary" href="index.html" role="button" id="registerbtn2">Register</a></p>
+	</div>
+	
   </body>
 </html>

@@ -80,3 +80,9 @@ img{
 #loading {
 	display:none;
 }
+
+#taste{
+	width:300px;
+	margin-left:auto;
+	margin-right:auto;
+}

@@ -80,10 +80,131 @@ body {
 	margin-bottom:10px;
 }
 
+#name_1{
+	text-weight:normal;
+}
+
+#name_2{
+	text-weight:normal;
+}
+
 .yuck{
-	width:150px;
-	margin-left:auto;
-	margin-right:auto;
+	color:rgb(200, 0, 0);
+	font-size: 26px;
 	margin-bottom:20px;
 	margin-top:0px;
+}
+
+.yuckInstruction{
+	margin-top:12px;
+	font-size: 15px;
+}
+
+.progressbar{
+	display:inline-block;
+	width:62px;
+	margin-right:4px;
+	margin-bottom:15px;
+}
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(104,204,232,0.9);
+}
+
+.overlay-scale {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay-scale.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);	
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+}
+
+/*------- Plot Carousel CSS-------*/
+
+.carousel {
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.carousel .item {
+  height: 600px;
+  background-color:rgba(104,204,232,0);
+}
+
+.carousel-indicators li {
+	border-color:#fff;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+.carousel-control.left{
+	color:#fff;
+	background-color:rgba(104,204,232,0);
+}
+
+.carousel-control.right{
+	color:#fff;
+	background-color:rgba(104,204,232,0);
+}
+
+/*-------- Plot CSS ---------*/
+
+#calories{
+	margin-top:50px;
+	max-width: 600px;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+#totalCalories{
+	margin-top:150px;
+	font-size: 35px;
+}
+
+#totalCaloriesValue{
+	margin-top:20px;
+	margin-left:20px;
+	font-size: 35px;
+	color:#F50A0A;
+	font-weight: bold;
+}
+
+#calories_d{
+	min-width: 310px; 
+	max-width: 800px; 
+	height: 400px; 
+	margin-top:80px;
+}
+
+#calories_e{
+	min-width: 310px; 
+	max-width: 800px; 
+	height: 400px; 
+	margin-top:80px;
+}
+
+#menu{
+	width: 160px;
+}
+
+#registerbtn{
+	width: 160px;
 }

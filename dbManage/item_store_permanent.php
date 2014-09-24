@@ -2,7 +2,7 @@
 
 require_once('dbManage/db_Connect.php');
 
-function item_store($email, $firstPic, $secondPic, $choice, $time) {
+function item_store_permanent($email, $firstPic, $secondPic, $choice, $time) {
 	
 	$db = db_Connect();
 
